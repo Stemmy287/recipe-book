@@ -1,7 +1,6 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true,
+    "jsx": "react-jsx",
     "baseUrl": "src",
     "paths": {
       "@app/*": ["app/*"],
@@ -10,8 +9,15 @@
       "@features/*": ["features/*"],
       "@shared/*": ["shared/*"],
       "@store/*": ["store/*"],
+      "tailwind.config": [
+        "./tailwind.config.js"
+      ]
     }
   },
+  "exclude": [
+    "node_modules"
+  ],
+  "extends": "expo/tsconfig.base",
   "include": [
     "**/*.ts",
     "**/*.tsx",
