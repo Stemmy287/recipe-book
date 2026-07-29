@@ -1,6 +1,6 @@
 import { Box } from '@shared/gluestack/ui/box';
-import { Text } from 'react-native';
+import { Text } from '@shared/gluestack/ui/text';
 
 export default function Main () {
-  return <Box><Text>123123</Text></Box>;
+  return <Box className="p-10"><Text>123123</Text></Box>;
 }
